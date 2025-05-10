@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>RISE&SHINE</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    animation: blinkBackground 1s infinite;
+  }
+  @keyframes blinkBackground {
+    50% {
+      background-color: red;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="colorful-text">RISE AND SHINE!</div>
+<script>
+  function changeTextColor() {
+    const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+    const colorIndex = Math.floor(Math.random() * colors.length);
+    document.getElementById('colorful-text').style.color = colors[colorIndex];
+  }
+  setInterval(changeTextColor, 2000);
+</script>
+</body>
+</html>

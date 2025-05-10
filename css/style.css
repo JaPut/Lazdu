@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/sphynx_graffiti.png'); /* Ensure this path points correctly to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    text-align: center;
+}
+
+.block {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    opacity: 80%;
+    border-radius: 19%;
+    font-size: 3vh;
+}
+
+.block h2, .block p, .block a {
+    text-decoration: none;
+    color: black;
+}
+
+.block1 {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    opacity: 80%;
+    border-radius: 19%;
+    font-size: 2.5vh;
+    transform: rotate(5deg);
+}
+
+.block1 h2, .block1 p, .block1 a {
+    margin: 20px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.block2 {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    width: auto;
+    padding: 10px;
+    background-color: none;
+    margin: 10px;
+    color: rgb(49, 20, 155);
+    opacity: 80%;
+    border-radius: 19%;
+    font-size: 2vh;
+    transform: rotate(-5deg);
+}
+
+.block2 h2, .block2 p, .block2 a {
+    margin: 0 0;
+    text-decoration: none;
+    color: black;
+}
+
+.block3 {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    opacity: 80%;
+    border-radius: 19%;
+    font-size: 3vh;
+    transform: rotate(5deg);
+}
+
+.block3 h2, .block3 p, .block3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-div {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    width: 40px; /* Width of the div */
+    height: 40px; /* Height of the div */
+    background-image: url('../images/JP_round.png'); /* Path to the JPG image */
+    background-size: cover; /* Scale the image to cover the div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .block, .block1, .block2, .block3 {
+    top: 5%;
+    left: 5%;
+    width: 90%; /* Set width to 90% of the visible screen */
+    margin: 10px auto; /* Center each block and add spacing between them */
+    padding: 15px; /* Add internal spacing */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    text-align: center; /* Center-align the content */
+    font-size: 1.2em; /* Adjust font size */
+    color: black; /* Text color */
+    transform: rotate(0deg);
+    }
+
+    .block1 {
+        top: 25%;
+    }
+    .block2 {
+        top: 55%;
+    }
+    .block3 {
+        top: 75%;
+    }
+    
+    /* Ensure links are styled consistently */
+    .block h2 a, .block1 h2 a, .block2 h2 a, .block3 h2 a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link color */
+    }
+
+    body {
+    flex-direction: column;
+    align-items: center;
+    }
+}
